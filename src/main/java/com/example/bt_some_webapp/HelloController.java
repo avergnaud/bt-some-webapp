@@ -15,7 +15,7 @@ public class HelloController {
     @GetMapping("/")
     public String index() {
         MyBean myBean = new MyBean("Adr", 40);
-        
+         
         try {
             return MyUtility1.test(myBean);
         } catch (JsonProcessingException e) {
